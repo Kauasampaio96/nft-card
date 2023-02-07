@@ -1,0 +1,173 @@
+/*Gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #0D1A2D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Card*/
+
+.card{
+    width: 375px;
+    height: 600px;
+    background-color: #15273F;
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+
+.card .main-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .img-hover{
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    background-color: #17ffff68;
+    z-index: 2;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    transition: 0.5s ;
+}
+
+.card .img-hover:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card h5{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+
+    margin-top: 20px;
+
+    transition: 0.5s;
+
+}
+
+.card h5:hover{
+    cursor: pointer;
+    color: #10FAF9;
+
+}
+
+.card p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: thin;
+    color: #ccc;
+
+    margin-top: 15px;
+
+}
+
+/*Details*/
+
+.card .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.196);
+
+    height: 30px;
+}
+
+
+.card .details .single-detail{
+    display: flex;
+    align-items: center;
+}
+
+.card .details .single-detail a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #10FAF9;
+    margin-left:7px;
+
+    letter-spacing: 1px;
+}
+
+.card .details .single-detail .card-date{
+
+    color: #8BACD9;
+
+}
+
+/*Creator*/
+
+.card .creator{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    height: 30px;
+}
+
+.card .creator img{
+    border: 1px solid #fff;
+    border-radius: 20px;
+
+}
+
+.card .creator a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: thin;
+    font-size: 14px;
+    color: #8BACD9;
+    margin-left: 10px;
+
+}
+
+
+
+
+.card .creator a enfase{
+    font-weight: thin;
+    color: #fff;
+    padding-left: 2.5px;
+    transition: 0.5s;
+}
+
+.card .creator a enfase:hover{
+    cursor: pointer;
+    font-size: thin;
+    color: #10FAF9;
+}
+
+
+
+@media (max-width:400px){
+    .card{
+        width: 80%;
+    
+    }
+
+    .card .img-hover{
+        width: 260px;
+        height: 260px;
+    }
+}
